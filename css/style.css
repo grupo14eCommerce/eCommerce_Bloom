@@ -1,0 +1,417 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+body {
+    background-color: #f5f5f5;
+    width: 100%;
+}
+
+/*top-navbar*/
+
+.banner-movil {
+    background-color: #565658;
+    width: 100%;
+    height: 50px;
+}
+
+.mensaje-banner-movil {
+    font-size: 25px;
+    color: #f5f5f5;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    position: relative;
+    align-items: center;
+}
+
+.banner-movil svg {
+    color: #f5f5f5;
+    padding-bottom: 10px;
+}
+
+/*Navbar*/
+
+.container-fluid {
+    background-color: #815542;
+    position: sticky;
+}
+
+#logo {
+    margin-left: 20px;
+    height: 60px;
+    width: auto;
+    margin-top: 10px;
+    align-items: center;
+}
+
+.navbar-nav {
+    margin-left: 0.5rem;
+    position: relative;
+}
+
+.nav-item {
+    margin: 0.2rem 0.5rem;
+    font-size: 1.2rem;
+    align-items: center;
+    font-weight: 500;
+}
+
+.nav-item .nav-link {
+    color: #c29d83;
+    margin-left: 2px;
+    text-shadow: 0px 0px 10px #565658;
+    transition: 0.5s ease;
+}
+
+.nav-item:hover {
+    background-color: #C29D83;
+    padding: 3px;
+    border: 2px solid #F5F5F5;
+    border-radius: 10px;
+}
+
+.dropdown-item {
+    position: relative;
+}
+
+#Buscar {
+    margin-left: 0.5rem;
+}
+
+#boton-buscar {
+    color: black;
+    font-weight: 600;
+    border: 2px solid #565658;
+    background-color: #C29D83;
+    border-radius: 10px;
+    width: 100px;
+    height: auto;
+    border: #565658;
+}
+
+#boton-buscar:hover {
+    background-color: #C29D83;
+    padding: 10px;
+    border: 2px solid #F5F5F5;
+    border-radius: 10px;
+}
+
+#input {
+    border-radius: 10px;
+    width: 11rem;
+}
+
+.Login {
+    margin-right: 50px;
+}
+
+.boton-entrar {
+    background-color: #C29D83;
+    border-radius: 10px;
+    width: 100px;
+    height: 45px;
+    border: #565658;
+    font-weight: 600;
+}
+
+.boton-entrar:hover {
+    background-color: #C29D83;
+    padding: 10px;
+    border: 2px solid #F5F5F5;
+    border-radius: 10px;
+}
+
+#comprar {
+    margin-right: 50px;
+}
+
+/*carrusel*/
+
+.carousel-inner {
+    height: 750px;
+}
+
+/*separación entre carroseul y banner de tendencia*/
+
+#carouselExampleIndicators,
+#tendencia {
+    margin-bottom: 50px
+}
+
+/*separación entre banner de tendencia y cards*/
+.banner-tendencias {
+    margin-bottom: 100px;
+}
+
+
+/*Banner de tendencias*/
+.banner-tendencias {
+    background-color: #815542;
+    width: 100%;
+    height: 80px;
+}
+
+.mensaje-banner-tendencia {
+    font-size: 50px;
+    color: #f5f5f5;
+    padding-top: 50px;
+    padding-bottom: 10px;
+    position: relative;
+    align-items: center;
+}
+
+.banner-tendencias svg {
+    color: #f5f5f5;
+    padding-bottom: 10px;
+}
+
+/*Separación  de las Cards*/
+
+#card1,
+#card2 {
+    margin-left: 50px;
+}
+
+#card2,
+#card3 {
+    margin-left: 50px;
+}
+
+#card3,
+#card4 {
+    margin-left: 50px;
+}
+
+#card4,
+#card5 {
+    margin-left: 50px;
+}
+
+/*Estilos de las Cards*/
+.container-card {
+    width: 1800px;
+    height: 60rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+
+}
+
+.container-card .card {
+    position: relative;
+    cursor: pointer;
+    padding-right: 1px;
+    padding-left: 1px;
+    align-content: center;
+    border: transparent;
+
+
+}
+
+.card .box {
+    width: 500px;
+    height: 600px;
+    transition: .5s;
+
+}
+
+.card .box1 {
+    position: relative;
+    background: #c29d83;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+    width: 300px;
+
+
+}
+
+.card:hover .box1 {
+    opacity: .5;
+    transform: translateY(0);
+
+}
+
+.content img {
+    width: 300px;
+}
+
+.content h3 {
+    position: relative;
+    top: -24px;
+    padding: 8px;
+    color: #f5f5f5;
+    background: #815542;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+
+
+
+.card .box2 {
+    position: relative;
+    background: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    box-sizing: border-box;
+    transform: translateY(-100px);
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 300px;
+
+
+}
+
+.card:hover .box2 {
+    transform: translateY(0);
+    box-shadow: 0 20px 15px 2px #fff;
+
+}
+
+.content .icon {
+    color: #c9ac2f;
+    font-size: 20px;
+
+}
+
+.icon img {
+    width: 20px;
+    height: 20px;
+    filter: invert(79%) sepia(41%) saturate(729%) hue-rotate(1deg) brightness(82%) contrast(94%);
+
+}
+
+.content p {
+    margin: 10px 0 0 0;
+    padding: 10;
+    font-size: medium;
+
+}
+
+.content a {
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 800;
+    color: #815542;
+    padding: 10px;
+    border: 1px solid #815542;
+    border-radius: 5px;
+
+
+}
+
+.content a:hover {
+    background: #C29D83;
+    color: #fff;
+    text-decoration: underline;
+}
+
+#precio {
+    font-size: 25px;
+    width: 600;
+}
+
+
+/*Estilos del footer*/
+footer{
+    background-color: #815542;
+    color:#f5f5f5;
+}
+
+footer a{
+    text-decoration: none;
+    
+}
+
+footer li a{
+    color: #EBE3D5!important;
+}
+
+footer i{
+    font-size: 1.2rem;
+    color: #7BC9FF;
+}
+
+#boton_suscribir{
+    background-color: #7BC9FF;
+    color: #FEFBF6;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/*Registro Styles*/
+
+
+.body {
+    font-family: "Montserrat", sans-serif;
+    background-color: #565658;
+}
+
+.formulario {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #C29D83;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 27px;
+    margin-top: 20px;
+}
+
+.formulario h1 {
+    text-align: center;
+}
+
+.formulario label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.formulario input[type="text"],
+.formulario input[type="email"],
+.formulario input[type="password"],
+.formulario input[type="number"] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.formulario .fecha-nacimiento {
+    display: flex;
+    justify-content: space-between;
+}
+
+.formulario .fecha-nacimiento input {
+    width: calc(30% - 5px);
+}
+
+.formulario input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #7BC9FF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.formulario input[type="submit"]:hover {
+    background-color:#1b6eaa;
+}
