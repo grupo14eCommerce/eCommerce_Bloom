@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BLOOM Moda y Estilo - Mujer</title>
+    <title>BLOOM Moda y Estilo - Registrate</title>
     <link rel="shortcut icon" href="./../assets/icons/icono.png" type="image/x-icon">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="./../css/style.css">
@@ -59,18 +59,15 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="navbar-nav mx-4 my-2">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./../index.html">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./pages/mujer.html">Mujer</a>
+                        <a class="nav-link" href="./mujer.html">Mujer</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="Index_Hombre">Hombre</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Index_Niño">Niño</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -85,7 +82,7 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./registrarse.html">Registrate</a>
+                        <a class="nav-link" href="./../pages/registrarse.html">Registrate</a>
                     </li>
                     <form class="d-flex" id="Buscar">
                         <input class="form-control me-2" type="search" placeholder="Buscá tu producto"
@@ -95,7 +92,7 @@
 
                 </ul>
 
-                <div class="Login">
+                <div class="Login m-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                         class="bi bi-person-circle" viewBox="0 0 16 16">
                         <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
@@ -105,7 +102,7 @@
                     <button class="boton-entrar" type="submit" hfre=" ">Ingresar</button>
                 </div>
 
-                <div class="Comprar">
+                <div class="Comprar m-2">
                     <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor"
                         class="bi bi-bag-fill" viewBox="0 0 16 16" id="comprar">
                         <path
@@ -119,62 +116,43 @@
     </nav>
 
     <!--Formulario de Registro-->
-   
-    
-
-
-
-    <footer class="mifooter">
-    
-    <div class="container-footer">
-        <div class="footer-row">
-            <div class="footer-links">
-
-                <h4>Compañia</h4>
-                <ul>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contatanos</a></li>
-                    <li><a href="#">Politica de privacidad</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-
-                <h4>Tienda</h4>
-                <ul>
-                    <li><a href="#">Mujeres</a></li>
-                    <li><a href="#">Hombres</a></li>
-                    <li><a href="#">Niños</a></li>
-                    <li><a href="#">Accesorios</a></li>
-                </ul>
-            </div>
-
-            <div class="footer-links">
-
-                <h4>Ayuda</h4>
-                <ul>
-                    <li><a href="#">Preguntas</a></li>
-                    <li><a href="#">Compras</a></li>
-                    <li><a href="#">Envios</a></li>
-                    <li><a href="#">Estatus de orden</a></li>
-                </ul>
-            </div>
-            
-            <div class="footer-links">
-
-                <h4>Siguenos</h4>
-                <div class="social-link">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
-
+   <div id="container" class="py-4">
+    <section class="section-register">
+        <div class="formulario">
+          <h1>Registro</h1>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+      
+          <label for="apellido">Apellido:</label>
+          <input type="text" id="apellido" name="apellido" required>
+      
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+      
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" name="password" required>
+      
+          <label for="confirm-password">Confirmar Contraseña:</label>
+          <input type="password" id="confirm-password" name="confirm-password" required>
+      
+          <div class="fecha-nacimiento">
+              <label for="dia" style="text-align: right; margin-right: 10px;">Día:</label>
+              <input type="text" id="dia" name="dia" placeholder="DD" maxlength="2" size="2" required>
+          
+              <label for="mes" style="text-align: right; margin-right: 10px;">Mes:</label>
+              <input type="text" id="mes" name="mes" placeholder="MM" maxlength="2" size="2" required>
+          
+              <label for="anio" style="text-align: right; margin-right: 10px;">Año:</label>
+              <input type="text" id="anio" name="anio" placeholder="AAAA" maxlength="4" size="4" required>
+          </div>
+      
+          <label for="ciudad">Pais:</label>
+          <input type="text" id="Pais" name="Pais">
+      
+          <input type="submit" value="Registrarse">
         </div>
-
+      </section>
     </div>
-    </footer>
+
 </body>
 </html>
