@@ -400,3 +400,9 @@ footer i{
     text-transform: uppercase;
     letter-spacing: 1px;
 }
+
+/*Span Error Registro*/
+.error {
+    display: none;
+    color: red;
+}

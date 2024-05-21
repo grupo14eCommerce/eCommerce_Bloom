@@ -1,8 +1,8 @@
-const form = document.getElementById('Registro-Form');
+const form = document.getElementById('formulario');
 
 form.addEventListener('submit', eventoEnvio => {
 
-    eventoEnvio.defaultPrevented();
+    eventoEnvio.preventDefault();
 
     if (ValidarForm()) {
         form.submit();
@@ -12,13 +12,14 @@ form.addEventListener('submit', eventoEnvio => {
 
 function ImprimeErrores(campo,mensaje) {
 
-    const campoerror = document.getElementById(`${campo}-Error`);
+    const campoerror = document.getElementById(`${campo}-error`);
     campoerror.innerText = mensaje;
+    campoerror.style.display = 'block';
 }
 
 function ValidacionEmail(email) {
 
-    const expRegulares = '^[^\s@]+@[^\s@]+\.[^\s@]+$';
+    const expRegulares = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return expRegulares.test(email);
 } 
 
@@ -56,6 +57,6 @@ function ValidarForm() {
         ImprimeErrores('Pais', 'Porfavor ingresa tu País');
         return false
     }
-    
+
     return false;
 }
