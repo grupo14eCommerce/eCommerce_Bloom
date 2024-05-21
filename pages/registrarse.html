@@ -117,24 +117,29 @@
 
     <!--Formulario de Registro-->
    <div id="container" class="py-4">
-    <section class="section-register">
-        <div class="formulario">
+    <section id= "Registro-Form" class="section-register">
+        <form class="formulario">
           <h1>Registro</h1>
+            <div class="campo">
           <label for="nombre">Nombre:</label>
           <input type="text" id="nombre" name="nombre" required>
-      
+            </div>
+            <div class="campo">
           <label for="apellido">Apellido:</label>
           <input type="text" id="apellido" name="apellido" required>
-      
+            </div>
+            <div class="campo">
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required>
-      
+            </div>
+            <div class="campo">
           <label for="password">Contraseña:</label>
           <input type="password" id="password" name="password" required>
-      
+            </div>
+            <div class="campo">
           <label for="confirm-password">Confirmar Contraseña:</label>
           <input type="password" id="confirm-password" name="confirm-password" required>
-      
+            </div>
           <div class="fecha-nacimiento">
               <label for="dia" style="text-align: right; margin-right: 10px;">Día:</label>
               <input type="text" id="dia" name="dia" placeholder="DD" maxlength="2" size="2" required>
@@ -145,12 +150,12 @@
               <label for="anio" style="text-align: right; margin-right: 10px;">Año:</label>
               <input type="text" id="anio" name="anio" placeholder="AAAA" maxlength="4" size="4" required>
           </div>
-      
+          <div class="campo">
           <label for="ciudad">Pais:</label>
           <input type="text" id="Pais" name="Pais">
-      
+         </div>
           <input type="submit" value="Registrarse">
-        </div>
+        </form>
       </section>
     </div>
 
