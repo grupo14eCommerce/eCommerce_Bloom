@@ -304,75 +304,80 @@ body {
 
 
 /*Estilos del formulario*/
-#container{
+
+.Body-Registro{
+    background-color: #C29D83;
+}
+.Registro-Form{
+
+    width: 400px;
+    background: #815542;
+    padding: 30px;
+    margin: auto;
+    margin-top: 75px;
+    border-radius: 9px;
     font-family: "Montserrat", sans-serif;
-    background-color: #565658;
-    height: 48rem;
+    color: white;
+    box-shadow: 0px 0px 37px #000;
+    margin-bottom: 75px;
+
+}
+
+.Registro-Form h4{
+
+    font-size: 22px;
+    margin-bottom: 20px;
+    
+}
+.Controls{
+   
+    width: 100%;
+    background: #565658;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid gray;
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    color: white;
+
+}
+.Registro-Form p{
+
+    height: 40px;
+    text-align: center;
+    font-size: 18px;
+    line-height: 40px;
+    color: #000;
+}
+.Registro-Form .boton {
+    color: black;
+}
+.Registro-Form a:hover{
+
+    color: white;
+    text-decoration: underline;
     
 }
 
-.section-register {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
-.formulario {
-    width: 50%;
-    margin: 0 auto;
-    background-color: #C29D83;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin-bottom: 27px;
-    margin-top: 20px;
-}
-
-.formulario h1 {
-    text-align: center;
-}
-
-.formulario label {
-    display: block;
-    margin-bottom: 5px;
-    font-weight: bold;
-}
-
-.formulario input[type="text"],
-.formulario input[type="email"],
-.formulario input[type="password"],
-.formulario input[type="number"] {
+.Registro-Form .botons{
     width: 100%;
-    padding: 8px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-.formulario .fecha-nacimiento {
-    display: flex;
-    justify-content: space-between;
-}
-
-.formulario .fecha-nacimiento input {
-    width: calc(30% - 5px);
-}
-
-.formulario input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #7BC9FF;
-    color: #fff;
+    background: #58b4f7;
+    border-radius: 4px;
     border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    padding: 12px;
+    color: white;
+    margin: 20px 0;
+    font-size: 16px;
+    
+
+}
+.Registro-Form .botons:hover{
+    background: #4699d6;
 }
 
-.formulario input[type="submit"]:hover {
-    background-color:#1b6eaa;
-}
+
 
 /*Estilos del footer*/
 footer{
@@ -401,8 +406,3 @@ footer i{
     letter-spacing: 1px;
 }
 
-/*Span Error Registro*/
-.error {
-    display: none;
-    color: red;
-}
