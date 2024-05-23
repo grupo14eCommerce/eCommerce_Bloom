@@ -116,23 +116,38 @@
     </nav>
     
     <!--Formulario de Registro-->
-    <section class="Registro-Form">
+    <form class="Registro-Form"  id= "Registro-Formu">
         <h4>Crea Tu Cuenta</h4>
 
+        <div class="campo">
         <input class="Controls" type="text" name="nombres" id="nombre" placeholder="Ingrese su nombre">
+        <span class="error" id="nombre-error"></span>
+        </div>
+
+        <div class="campo"> 
         <input class="Controls" type="text" name="apellido" id="apellido" placeholder="Ingrese su apellido">
+        <span class="error" id="apellido-error"></span>
+        </div>
+
+        <div class="campo">
         <input class="Controls" type="email" name="email" id="email" placeholder="Ingrese su email">
+        <span class="error" id="email-error"></span>
+        </div>
+
+        <div class="campo">
         <input class="Controls" type="password" name="contraseña" id="contraseña" placeholder="Ingrese su contraseña">
+        <span class="error" id="contraseña-error"></span>
+        </div>
 
         <div class="flex-container">
             
         <p>Estoy de acuerdo con <a class="boton" href="#">Terminos y Condiciones</a></p>
 
-        <input class= "botons" type="submit" value="Registrar">
+        <button class= "botons" type="submit">Registrar</button>
 
         <p><a class="boton" href="#">¿Ya tienes cuenta?</a></p>
         </div>
-    </section>
+    </form>
 
        <!-- Footer -->
 <footer class="bg-body-tertiary text-center">
@@ -313,6 +328,6 @@
     <!-- Copyright -->
   </footer>
   <!-- Footer -->
-
+  <script src="./../js/index.js"></script>
 </body>
 </html>
