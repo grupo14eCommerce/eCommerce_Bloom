@@ -27,11 +27,11 @@
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-
+    <script src="../js/mujer.js"></script>
 </head>
 
-<body>
-
+<body onload="invocarApi()">
+    <header id="header">
     <!--Banner Movil Cupon de Descuento-->
     <div class="banner-movil">
         <marquee behavior="run" scrolldelay="2" loop="infinite" direction="right">
@@ -117,64 +117,184 @@
             </div>
         </div>
     </nav>
-
+    </header>
     
-   
+   <!--Seccion Principal-->
+   <div id="container" class="p-4 row row-cols-1 row-cols-md-3">
+
+   </div>
     
 
-
-
-    <footer class="mifooter">
-    
-    <div class="container-footer">
-        <div class="footer-row">
-            <div class="footer-links">
-
-                <h4>Compañia</h4>
-                <ul>
-                    <li><a href="#">Nosotros</a></li>
-                    <li><a href="#">Contatanos</a></li>
-                    <li><a href="#">Politica de privacidad</a></li>
-                    <li><a href="#">FAQ</a></li>
-                </ul>
+   <!-- Footer -->
+   <footer class="bg-body-tertiary text-center">
+    <!-- Grid container -->
+    <div class="container p-4">
+      <!-- Section: Form -->
+      <section class="m-1">
+        <form action="">
+          <!--Grid row-->
+          <div class="row d-flex justify-content-center">
+            <!--Grid column-->
+            <div class="col-auto">
+              <p class="pt-2">
+                <strong>Suscríbete y obten un 15% off en tu próxima compra</strong>
+              </p>
             </div>
+            <!--Grid column-->
 
-            <div class="footer-links">
-
-                <h4>Tienda</h4>
-                <ul>
-                    <li><a href="#">Mujeres</a></li>
-                    <li><a href="#">Hombres</a></li>
-                    <li><a href="#">Niños</a></li>
-                    <li><a href="#">Accesorios</a></li>
-                </ul>
+            <!--Grid column-->
+            <div class="col-md-5 col-12">
+              <!-- Email input -->
+              <div data-mdb-input-init class="form-outline mb-4">
+                <input type="email" id="form_suscripcion" class="form-control" />
+              </div>
             </div>
+            <!--Grid column-->
 
-            <div class="footer-links">
-
-                <h4>Ayuda</h4>
-                <ul>
-                    <li><a href="#">Preguntas</a></li>
-                    <li><a href="#">Compras</a></li>
-                    <li><a href="#">Envios</a></li>
-                    <li><a href="#">Estatus de orden</a></li>
-                </ul>
+            <!--Grid column-->
+            <div class="col-auto">
+              <!-- Submit button -->
+              <button id="boton_suscribir" type="submit" class="btn mb-4">
+                Suscribir
+              </button>
             </div>
-            
-            <div class="footer-links">
+            <!--Grid column-->
+          </div>
+          <!--Grid row-->
+        </form>
+      </section>
+      <!-- Section: Form -->
 
-                <h4>Siguenos</h4>
-                <div class="social-link">
-                <a href="#"><i class="fab fa-facebook-f"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                </div>
-            </div>
+      <!-- Section: Text -->
+      <section class="mb-4">
+        <p>
+          Lo mejor de la moda otoño invierno 2024. Tendencias, estilos, colecciones, looks, la moda en su versión
+          otoño invierno 2024. Ropa de moda 2024 para mujer, calzado y accesorios
+        </p>
+      </section>
+      <!-- Section: Text -->
 
+      <!-- Section: Links -->
+      <section class="m-1">
+        <!--Grid row-->
+        <div class="row">
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Compañia</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!">Nosotros</a>
+              </li>
+              <li>
+                <a href="#!">Contáctanos</a>
+              </li>
+              <li>
+                <a href="#!">Privacidad</a>
+              </li>
+              <li>
+                <a href="#!">FAQ</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Tienda</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="./pages/mujer.html">Mujeres</a>
+              </li>
+              <li>
+                <a href="#!">Hombres</a>
+              </li>
+              <li>
+                <a href="#!">Niños</a>
+              </li>
+              <li>
+                <a href="#!">Accesorios</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Ayuda</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!">Preguntas</a>
+              </li>
+              <li>
+                <a href="#!">Compras</a>
+              </li>
+              <li>
+                <a href="#!">Envíos</a>
+              </li>
+              <li>
+                <a href="#!">Estatus de orden</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
+
+          <!--Grid column-->
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase">Servicios</h5>
+
+            <ul class="list-unstyled mb-0">
+              <li>
+                <a href="#!">Promociones</a>
+              </li>
+              <li>
+                <a href="#!">Tendencias</a>
+              </li>
+              <li>
+                <a href="#!">Asesoramiento</a>
+              </li>
+              <li>
+                <a href="#!">Franquicias</a>
+              </li>
+            </ul>
+          </div>
+          <!--Grid column-->
         </div>
+        <!--Grid row-->
+      </section>
+      <!-- Section: Links -->
+      <!-- Section: Social media -->
+      <section class="m-1">
+        <!-- Facebook -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i class="fab fa-facebook-f"></i></a>
 
+        <!-- Twitter -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i class="fab fa-twitter"></i></a>
+
+        <!-- Google -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i class="fab fa-google"></i></a>
+
+        <!-- Instagram -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i class="fab fa-instagram"></i></a>
+
+        <!-- Linkedin -->
+        <a data-mdb-ripple-init class="btn btn-outline btn-floating m-1" href="#!" role="button"><i class="fab fa-linkedin-in"></i></a>
+      </section>
+      <!-- Section: Social media -->
     </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-center p-3 bg-secondary text-white">
+      © 2024
+      <a class="text-reset fw-bold" href="./index.html">BLOOM Moda y Estilo</a>
+      Todos los derechos reservados
+    </div>
+    <!-- Copyright -->
     </footer>
+    <!-- Footer -->
+    
 </body>
 </html>
